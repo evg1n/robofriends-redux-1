@@ -1,6 +1,12 @@
 version: 2
 jobs:
-  build:
+  bobby:
+    docker:
+      - image: circleci/ruby:2.4.1
+    steps:
+      - checkout
+      - run: echo "doubletrouble"
+  sally:
     docker:
       - image: circleci/ruby:2.4.1
     steps:
