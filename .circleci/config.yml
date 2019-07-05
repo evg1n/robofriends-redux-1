@@ -6,9 +6,9 @@ jobs:
     steps:
       - checkout
       - run: echo "doubletrouble"
-    workflows:
-      version: 2
-      bobby_sally:
-        jobs:
-          - bobby
-          - sally
+workflows:
+  version: 2
+  bobby_sally:
+    jobs:
+      - bobby
+      - sally
